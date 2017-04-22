@@ -12,6 +12,9 @@ Initial features required as part of the user story:
 ## Approach
 [json  service](https://api.myjson.com/bins/gx6vz) is regarded as the main source of product's data and will be fetch by an admin by an UPDATE button. This process saves the latest information that the api service provides.
 
+## How To Use
+Initial products from [json  service](https://api.myjson.com/bins/gx6vz)  will be populated by pressing UPDATE button from homepage. A new product can be created as well manually. DELETE button is provided on the right side of every product to test only that update features are working once a product from [json  service](https://api.myjson.com/bins/gx6vz) is removed.  
+
 ## Technology
 Ruby On Rails, Javascript
 
