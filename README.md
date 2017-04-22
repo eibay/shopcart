@@ -1,24 +1,15 @@
-# README
+# Online Checkout Pricing Service ( OCPS )
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I developed this OCPS full stack solution in response to a coding challenge. Feel free to reuse as you find it suitable to any of your application.
 
-Things you may want to cover:
+The following essential features are required as part of the user story:
 
-* Ruby version
+* Users will be able to add multiple items, and display the total price.
+* Service will calculate the total using the pricing rules provided by the following: [json  service](https://api.myjson.com/bins/gx6vz)
+* Whenever a special quantity of an item is selected, special_price should be used for that instead of the normal pricing.
 
-* System dependencies
+## Technology
+Rails
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+GPL-4
