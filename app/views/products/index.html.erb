@@ -1,8 +1,7 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
-  <h4>Products</h4>
   <div class="row">
-    <h5>Shopping Items</h5>
+    <h4>Shopping Items</h4>
     <table class="bordered highlight centered sortable">
       <thead>
         <tr>
@@ -23,7 +22,7 @@
           <% end %>
   <!--         <td><%= link_to 'Show', product %></td>
           <td><%= link_to 'Edit', edit_product_path(product) %></td> -->
-          <td><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Delete', product, class:"btn waves-light waves-effect", method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
         <% end %>
       </tbody>
