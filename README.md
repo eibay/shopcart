@@ -1,6 +1,6 @@
 # ShopCarte
 
-I am developing ShopCarte initially as my full stack solution in response to a coding challenge. Feel free to contribute and reuse if you find it suitable to any of your application. Visit the current version named [ShopCarte](http://shopcarte.herokuapp.com) at heroku.
+I am developing ShopCarte initially as my full stack solution in response to a coding challenge. Feel free to contribute and reuse if you find it suitable to any of your application. Visit the current version named [ShopCarte](https://shopcarte.herokuapp.com) at heroku.
 
 ## Requirements
 Initial features required as part of the user story:
