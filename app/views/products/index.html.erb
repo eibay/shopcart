@@ -13,8 +13,8 @@
       </tr>
     </thead>
     <tbody>
-      <% @products.each_with_index do |product, index|  %>
-      <tr class="products-row" id=<%= "#{index}" %>>
+      <% @products.each_with_index do |product|  %>
+      <tr class="products-row" id=<%= product.id %>>
         <td><%= product.name %></td>
         <td><%= product.unit_price %></td>
         <% if product.special_qty %>
@@ -23,8 +23,8 @@
           <td>-</td>
         <% end %>
 <!--         <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        <td><%= link_to 'Edit', edit_product_path(product) %></td> -->
+        <td><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
       <% end %>
     </tbody>
@@ -35,3 +35,9 @@
 </div>
 
 <%= link_to 'New Product', new_product_path, class: "btn waves-effect waves-light" %>
+
+<button id="getUpdate" class="btn waves-effect waves-light">Update</button>
+<script>
+  dataUpdate();
+</script>
+
