@@ -1,22 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<div class="row">
-  <div class="col s12 m4 l2"></div>
-  <div class="col s12 m4 l8">
-    <h3>Product Detail</h3>
-    <p>Product Name:<h5><%= @product.name %></h5> </p>
-    <p>Unit Price:<h5><%= @product.unit_price %></h5> </p>
-    Promotional Offers:
-    <p>
-      <% if @product["special_qty"] %>
-      <h5><%= "#{@product["special_qty"]} for #{@product.special_price}" %></h5>
-      <% else %>
-        <%= "none" %>
-      <% end %>
-    </p>  
-    <%= link_to 'Edit', edit_product_path(@product), class: "btn waves-effect waves-light" %> 
-    <%= link_to 'Back', products_path, class: "btn waves-light waves-effect" %>
+  <div class="row">
+    <div class="col s12 m4 l8">
+      <h3>Product Detail</h3>
+      <p>Product Name:<h5><%= @product.name %></h5> </p>
+      <p>Unit Price:<h5><%= @product.unit_price %></h5> </p>
+      Promotional Offers:
+      <p>
+        <% if @product["special_qty"] %>
+        <h5><%= "#{@product["special_qty"]} for #{@product.special_price}" %></h5>
+        <% else %>
+          <%= "none" %>
+        <% end %>
+      </p>  
+      <%= link_to 'Edit', edit_product_path(@product), class: "btn waves-effect waves-light" %> 
+      <%= link_to 'Back', products_path, class: "btn waves-light waves-effect" %>
+    </div>
   </div>
-  <div class="col s12 m4 l2"></div>
 </div>
-
