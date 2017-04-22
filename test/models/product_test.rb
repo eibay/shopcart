@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class ProductTest < ActiveSupport::TestCase
+  fixtures :products 
 
   test "product attributes must not be empty" do
     product = Product.new
@@ -24,6 +25,13 @@ class ProductTest < ActiveSupport::TestCase
 
     product.unit_price = 1
     assert product.valid?
+  end
+
+  test "product is not valid without a unique title" do 
+    product = Product.new(name:   products(:one).name,
+                          unit_price: 11,
+                          special_qty: 3,
+                          special_price: 28)
   end
 
 end
