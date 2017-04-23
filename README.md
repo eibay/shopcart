@@ -22,4 +22,4 @@ Rails unit testing default are used and still on the way to completion. At the m
 Ruby On Rails, Javascript
 
 ## License
-GPL-4
+GPL-3
