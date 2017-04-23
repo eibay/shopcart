@@ -14,7 +14,7 @@ class Cart < ApplicationRecord
   end
 
   def total_price(product, current_item)
-    if current_item.product.special_price && (current_item.quantity > current_item.product.special_qty)
+    if current_item.product.special_price && (current_item.quantity >= current_item.product.special_qty)
       total_price = offer_total_price(current_item, product) + piece_total_price(current_item, product)
     else
       total_price = current_item.quantity * current_item.product.unit_price
