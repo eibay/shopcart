@@ -7,7 +7,9 @@
       <tr>
         <th>Item Name</th>
         <th>Price</th>
+        <th>Quantity</th>
         <th>Offers</th>
+        <th>Total Price</th>
       </tr>
     </thead>
     <tbody>
@@ -15,11 +17,13 @@
       <tr>
         <td><%= item.product.name %></td>
         <td><%= item.product.unit_price %></td>
+        <td><%= item.quantity %></td>
         <% if item.product.special_qty %>
           <td><%= "#{item.product.special_qty} for #{item.product.special_price}" %></td>
         <% else %>
           <td>-</td>
         <% end %>
+        <td><%= item.total_price %></td>
       </tr>
     <% end %>
     </tbody>
