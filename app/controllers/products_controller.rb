@@ -5,6 +5,10 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+    if session[:cart_id]
+      @cart_id = Cart.find(session[:cart_id])
+    else
+    end
   end
 
   # GET /products/1
