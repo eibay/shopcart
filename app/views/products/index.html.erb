@@ -2,6 +2,11 @@
   <p id="notice"><%= notice %></p>
   <div class="row">
     <h4>Shopping Items</h4>
+  <div>
+    <%= link_to 'New Product', new_product_path, class: "btn waves-effect waves-light" %>
+    <button id="getUpdate" class="btn waves-effect waves-light">Update</button>
+    <%= link_to 'View Cart', cart_path(:bugs), class:"btn waves-light waves-effect" %>
+  </div>  
     <table class="bordered highlight centered sortable">
       <thead>
         <tr>
@@ -41,9 +46,8 @@
     </table>
   </div>
 
-  <%= link_to 'New Product', new_product_path, class: "btn waves-effect waves-light" %>
 
-  <button id="getUpdate" class="btn waves-effect waves-light">Update</button>
+
   <script>
     dataUpdate();
   </script>
