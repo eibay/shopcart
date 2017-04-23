@@ -33,4 +33,7 @@
       <%= button_to 'Empty Cart', @cart, method: :delete, data:{confirm: 'Are you sure?'}, class:"btn waves-light waves-effects" %>
       <%= link_to 'Continue Shopping', products_path, class:"btn waves-effects waves-light" %>
     </div>
+    <div>
+      <h5> Grand Total: <%= number_to_currency(@cart.grand_total) %></h5>
+    </div>
 </div>
